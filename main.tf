@@ -17,7 +17,7 @@ provider "aws" {
 
 module "ec2" {
   #source = "./modules/ec2"
-  source = "https://github.com/parveenpinjar/terraform_modules-ec2new.git"
+  source = "github.com/parveenpinjar/terraform_modules-ec2new"
 
   instance_count = 1
   instance_type   = "t2.micro"
@@ -26,7 +26,7 @@ module "ec2" {
 
 module "s3" {
   #source = "./modules/s3"
-  source = "https://github.com/parveenpinjar/terraform_modules-s3.git"
+  source = "github.com/parveenpinjar/terraform_modules-s3"
 
   bucket                = "devon"
   force_destroy         = false
